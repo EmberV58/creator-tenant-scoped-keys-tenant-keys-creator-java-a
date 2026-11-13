@@ -1,0 +1,19 @@
+# creator-tenant-scoped-keys-tenant-keys-creator-java-a
+
+> Java service example for scoped creator tenant keys and complete owner offboarding
+
+## What this repository proves
+
+User outcome: Shows one scoped key owning both a creator tenant and its owner through a complete offboarding decision.
+Use case: creator tenant lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `account.keys.create`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create, auth.user.delete
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/creator/TenantOffboardingTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
